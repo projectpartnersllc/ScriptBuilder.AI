@@ -12,7 +12,7 @@ from prompts import *  # Ensure you have this import
 # Initialize the LLM
 llm = ChatGroq(
     model_name="llama3-8b-8192",
-    api_key='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'
+    api_key='your api key'
 )
 
 
@@ -155,23 +155,6 @@ SUPPORTED_SESSION_TYPES = {
     "expert5", "expert6", "expert7", "expert8"
 }
 
-# # Variables to store mic and file inputs (You can adjust this based on your need)
-# microphone_input: Optional[str] = None
-# file_input: Optional[UploadFile] = None
-
-# # Function to simulate microphone input handling (this can be later replaced with real microphone input handling logic)
-# def set_microphone_input(mic_input: str):
-#     """Simulate setting microphone input."""
-#     global microphone_input
-#     microphone_input = mic_input
-#     return {"message": f"Microphone input received: {microphone_input}"}
-
-# # Function to handle file upload input
-# async def set_file_input(file: UploadFile = File(...)):
-#     """Handle file upload and store the file."""
-#     global file_input
-#     file_input = file
-#     return {"message": f"File uploaded: {file.filename}"}
 
 async def chat(input_text: str, session_id: str) -> str:
     """Process a chat message using the appropriate chain."""
