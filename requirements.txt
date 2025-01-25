@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+langchain-core
+langchain-community
+langchain-groq
+streamlit
+deepgram-sdk
